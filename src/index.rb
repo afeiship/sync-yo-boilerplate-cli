@@ -6,7 +6,7 @@ require "fileutils"
 YO_CACHE = "/Users/feizheng/.cache/node-yeoman-remote-cache/afeiship"
 
 class SyncYoBoilerplate < Thor
-  desc "sync NAME", "The project name"
+  desc "sync NAME", "Sync github boilerplate to yeoman cache."
 
   def sync(name)
     dir = "#{YO_CACHE}/#{name}"
