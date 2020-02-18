@@ -22,7 +22,7 @@ class SyncYoBoilerplate < Thor
   end
 
   def self.exit_on_failure?
-    0
+    false
   end
 end
 

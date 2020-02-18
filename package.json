@@ -7,6 +7,11 @@
     "name": "afeiship",
     "email": "1290657123@qq.com"
   },
+  "scripts": {
+    "thor:install": "thor install src/index.rb",
+    "thor:installed": "thor installed",
+    "thor:uninstall": "thor uninstall @feizheng/sync-yo-boilerplate"
+  },
   "license": "MIT",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
