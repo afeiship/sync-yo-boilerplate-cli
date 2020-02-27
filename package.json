@@ -10,7 +10,7 @@
   "scripts": {
     "thor:install": "thor install src/index.rb",
     "thor:list": "thor installed",
-    "thor:update": "thor update",
+    "thor:update": "thor update @feizheng/sync-yo-boilerplate",
     "thor:uninstall": "thor uninstall @feizheng/sync-yo-boilerplate"
   },
   "license": "MIT",
