@@ -15,3 +15,6 @@ npm install -S @feizheng/sync-yo-boilerplate
 ```shell
 thor thor_cli:sync_yo_boilerplate:sync boilerplate-webkit-sassui
 ```
+
+## dependencies
+- gnu-tar
