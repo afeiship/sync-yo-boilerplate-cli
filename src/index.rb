@@ -16,8 +16,8 @@ module ThorCli
       sp2 = spinners.register "[:spinner] 2. get files with proxy from github: #{name}"
 
       dir = "#{YO_CACHE}/#{name}"
+      FileUtils.mkdir_p YO_CACHE
       FileUtils.cd(YO_CACHE, :verbose => true) do
-
         sp1.auto_spin
         # clean old
         system "rm -rf #{name}"
