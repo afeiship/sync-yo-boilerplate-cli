@@ -1,5 +1,6 @@
 {
   "name": "@feizheng/sync-yo-boilerplate",
+  "private": true,
   "version": "1.1.0",
   "description": "Sync yeoman boilerplate cache.",
   "homepage": "https://github.com/afeiship",
@@ -13,8 +14,5 @@
     "thor:update": "thor update @feizheng/sync-yo-boilerplate",
     "thor:uninstall": "thor uninstall @feizheng/sync-yo-boilerplate"
   },
-  "license": "MIT",
-  "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
-  }
+  "license": "MIT"
 }
