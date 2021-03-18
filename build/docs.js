@@ -7,7 +7,7 @@
     pattern: ['gulp-*', 'gulp.*', 'del', '@jswork/gulp-*']
   });
 
-  const usage = exec('sync-yo-boilerplate-cli -h').toString().trim();
+  const usage = exec('sybc -h').toString().trim();
 
   gulp.task('docs', function () {
     return gulp

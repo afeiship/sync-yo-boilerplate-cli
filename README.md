@@ -15,12 +15,13 @@ npm install @jswork/sync-yo-boilerplate-cli
 
 ## usage
 ~~~
-Usage: sync-yo-boilerplate-cli [options]
+Usage: sybc [options]
 
 Options:
-  -V, --version  output the version number
-  -d, --debug    only show cmds, but not clean.
-  -h, --help     display help for command
+  -V, --version          output the version number
+  -p, --proxy            If use http(s) proxy url(default: 127.0.0.1:9090).
+  -t, --target <string>  Boilerplate name (eg: boilerplate-cli).
+  -h, --help             display help for command
 ~~~
 
 ## license
