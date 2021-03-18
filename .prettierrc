@@ -1,7 +1,7 @@
 {
   "trailingComma": "none",
   "arrowParens": "always",
-  "printWidth": 100,
+  "printWidth": 80,
   "bracketSpacing": true,
   "jsxBracketSameLine": true,
   "tabWidth": 2,
@@ -9,23 +9,19 @@
   "singleQuote": true,
   "overrides": [
     {
-      "files": ["*.json", ".eslintrc", ".tslintrc", ".prettierrc", ".tern-project"],
+      "files": "*.scss",
       "options": {
-        "parser": "json",
-        "tabWidth": 2
+        "trailingComma": "none",
+        "tabWidth": 2,
+        "parser": "scss"
       }
     },
     {
-      "files": "*.{css,sass,scss,less}",
+      "files": "*.json",
       "options": {
-        "parser": "postcss",
-        "tabWidth": 2
-      }
-    },
-    {
-      "files": "*.ts",
-      "options": {
-        "parser": "typescript"
+        "trailingComma": "none",
+        "tabWidth": 2,
+        "parser": "json"
       }
     },
     {

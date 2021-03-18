@@ -7,6 +7,9 @@ __tests__
 src
 build
 gulpfile.js
+docs
+Gemfile
+Rakefile
 
 .editorconfig
-.prettierrc
+.release-it.json

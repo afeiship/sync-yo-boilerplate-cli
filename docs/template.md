@@ -15,12 +15,7 @@ npm install @jswork/sync-yo-boilerplate-cli
 
 ## usage
 ~~~
-Usage: sync-yo-boilerplate-cli [options]
-
-Options:
-  -V, --version  output the version number
-  -d, --debug    only show cmds, but not clean.
-  -h, --help     display help for command
+__USAGE__
 ~~~
 
 ## license
