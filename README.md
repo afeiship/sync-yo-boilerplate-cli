@@ -6,7 +6,7 @@
 [![size][size-image]][size-url]
 [![download][download-image]][download-url]
 
-![snapshot](https://tva1.sinaimg.cn/large/008eGmZEly1gonvjgpxj2j30n205kt94.jpg)
+![snapshot](https://tva1.sinaimg.cn/large/0081Kckwgy1gk87ynhkbaj30u60asasp.jpg)
 
 ## installation
 ```shell
@@ -19,6 +19,7 @@ Usage: sybc [options]
 
 Options:
   -V, --version          output the version number
+  -a, --all              Sync all list.json boilerplate.
   -p, --proxy            If use http(s) proxy url(default: 127.0.0.1:9090).
   -t, --target <string>  Boilerplate name (eg: boilerplate-cli).
   -h, --help             display help for command

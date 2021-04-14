@@ -13,3 +13,4 @@ Rakefile
 
 .editorconfig
 .release-it.json
+.prettierrc

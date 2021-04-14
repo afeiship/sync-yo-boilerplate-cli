@@ -5,6 +5,7 @@ const del = require('del');
 const mkdirp = require('mkdirp');
 const HttpsProxyAgent = require('https-proxy-agent');
 const Listr = require('listr');
+const list = require('./list.json');
 
 // next packages:
 require('@jswork/next');
@@ -13,12 +14,13 @@ require('@jswork/next-node-downfile');
 
 const { version } = nx.absolutePackage();
 const program = new Command();
-const execSync = require('child_process').execSync;
+const { execSync, exec } = require('child_process');
 const YO_CACHE = `${process.env.HOME}/.cache/node-yeoman-remote-cache/afeiship`;
 
 program.version(version);
 
 program
+  .option('-a, --all', 'Sync all list.json boilerplate.')
   .option('-p, --proxy', 'If use http(s) proxy url(default: 127.0.0.1:9090).')
   .option('-t, --target <string>', 'Boilerplate name (eg: boilerplate-cli).')
   .parse(process.argv);
@@ -68,11 +70,33 @@ nx.declare({
       });
     },
     start() {
-      this.tasks.run().then((res) => {
-        execSync(
-          `cd ${YO_CACHE} && gtar -zxf ${program.target}/master.tar.gz --strip-components 1  --directory ${program.target}/master`
-        );
-      });
+      if (program.target) {
+        this.tasks.run().then((res) => {
+          execSync(
+            `cd ${YO_CACHE} && gtar -zxf ${program.target}/master.tar.gz --strip-components 1  --directory ${program.target}/master`
+          );
+        });
+      }
+
+      if (program.all) {
+        const items = list.map((target, index) => {
+          return {
+            title: `step ${index + 1}: ${target}`,
+            task: () => {
+              return new Promise((resolve, reject) => {
+                setTimeout(() => {
+                  execSync(`sybc -p -t ${target}`);
+                  resolve();
+                }, 0);
+              });
+            }
+          };
+        });
+        const tasks = new Listr(items);
+        tasks.run().then((res) => {
+          console.log('🤡 tasks done!');
+        });
+      }
     }
   }
 });

@@ -1,0 +1,14 @@
+[
+  "boilerplate-cli",
+  "boilerplate-express",
+  "boilerplate-express-https",
+  "boilerplate-gulp",
+  "boilerplate-next-class",
+  "boilerplate-next-package",
+  "boilerplate-node-package",
+  "boilerplate-react-js-component",
+  "boilerplate-react-ts-component",
+  "boilerplate-spider-typeorm",
+  "boilerplate-storybook",
+  "boilerplate-tiny-rails"
+]
