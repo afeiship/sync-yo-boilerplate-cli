@@ -1,5 +1,14 @@
 [
+  "boilerplate-rake",
+  "boilerplate-gulp-plugin",
+  "boilerplate-tampermonkey",
+  "boilerplate-thor-cli",
+  "boilerplate-generator",
+  "boilerplate-github",
+  "boilerplate-rollup-package",
+  "boilerplate-react-app",
   "boilerplate-cli",
+  "boilerplate-nodejs",
   "boilerplate-express",
   "boilerplate-express-https",
   "boilerplate-gulp",
@@ -8,7 +17,13 @@
   "boilerplate-node-package",
   "boilerplate-react-js-component",
   "boilerplate-react-ts-component",
+  "boilerplate-docusaurus",
+  "boilerplate-monorepo",
+  "boilerplate-wsui",
   "boilerplate-spider-typeorm",
+  "boilerplate-typescript-package",
+  "boilerplate-typescript-app",
   "boilerplate-storybook",
+  "boilerplate-typescript",
   "boilerplate-tiny-rails"
 ]
