@@ -2,7 +2,7 @@
   "name": "@jswork/sync-yo-boilerplate-cli",
   "version": "1.0.0",
   "description": "Sync yeoman boilerplate cache.",
-  "homepage": "https://github.com/afeiship/sync-yo-boilerplate-cli",
+  "homepage": "https://js.work",
   "author": {
     "name": "afei",
     "email": "1290657123@qq.com"
@@ -50,6 +50,16 @@
     "tmpl",
     "github",
     "template",
-    "boilerplate"
-  ]
+    "boilerplate",
+    "afei",
+    "private",
+    "aric",
+    "syb",
+    "sybs",
+    "sybc"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/afeiship/sync-yo-boilerplate-cli.git"
+  }
 }

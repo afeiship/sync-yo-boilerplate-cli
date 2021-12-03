@@ -64,9 +64,8 @@ nx.declare({
     },
     download() {
       return nx.nodeDownfile({
-        url: `https://github.com/afeiship/${program.target}/archive/master.tar.gz`,
-        filename: `${this.dir}/master.tar.gz`,
-        agent: this.agent
+        url: `https://github.com.cnpmjs.org/afeiship/${program.target}/archive/master.tar.gz`,
+        filename: `${this.dir}/master.tar.gz`
       });
     },
     start() {
